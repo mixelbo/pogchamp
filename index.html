@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <style>
+      * {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        margin: 0 10px;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: rgb(245, 47, 107);
+        color: #ffff;
+      }
+
+      #normal-button {
+        position: absolute;
+        font-size: 2rem;
+        border: solid #ffff;
+        background-color: rgb(245, 47, 107);
+        color: #ffff;
+      }
+
+      #evil-button {
+        position: absolute;
+        white-space: nowrap;
+        font-size: 2rem;
+        border: solid #ffff;
+        background-color: rgb(245, 47, 107);
+        color: #ffff;
+      }
+
+      #evil-button:hover span {
+        display: none;
+      }
+
+      #normal-button:hover {
+        border-color: black;
+        color: black;
+      }
+
+      #evil-button:hover:before {
+        content: "Sim";
+        border-color: black;
+        color: #ffff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cuzinho?</h1>
+    <!-- Inspecionar significa um sim-->
+    <button id="normal-button">Sim</button>
+    <button id="evil-button"><span>Não</span></button>
+  </body>
+</html>
